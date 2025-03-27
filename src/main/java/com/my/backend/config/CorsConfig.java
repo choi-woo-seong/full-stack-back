@@ -14,7 +14,7 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("api/**")
                         .allowedMethods("GET", "POST")
-                        .allowedOrigins("http://15.164.56.190")//react 서버주소
+                        .allowedOrigins("http://mybukket-app.s3-website.ap-northeast-2.amazonaws.com")//react 서버주소
                         .allowCredentials(true);
             }
         };
