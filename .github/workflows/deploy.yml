@@ -42,4 +42,5 @@ jobs:
           script: |
             sudo timedatectl set-timezone Asia/Seoul
             docker pull ${{ secrets.DOCKER_USER_NAME }}/${{ secrets.DOCKER_IMAGE_NAME }}-back
+            docker-compose down --remove-orphans
             docker-compose up -d --build
